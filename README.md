@@ -43,8 +43,9 @@ car_price_prediction/
 - **Binary Columns:** Label encoding for `leather interior`, `wheel`, `doors`  
 - **High Cardinality Columns:** Keep only top 20 frequent models  
 - **One-Hot Encoding:** For categorical fields (e.g., model, manufacturer)  
-- **Artifacts Saved:**  
-  - `data_encoded.csv`  
+- **Artifacts Saved:**
+  - `car_price_prediction_cleaned.csv`
+  - `car_data_encoded.csv`  
   - `le_encoders.pkl`  
   - `top_models.pkl`  
   - `feature_names.pkl`  

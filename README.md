@@ -27,8 +27,8 @@
 car_price_prediction/  
 │  
 ├── data_preprocessing.py # Clean & encode dataset  
-├── car_price_prediction.csv # Raw Kaggle dataset 
-├── visualization.ipynb # EDA notebook with profiling & plots
+├── car_price_prediction.csv # Raw Kaggle dataset  
+├── visualization.ipynb # EDA notebook with profiling & plots  
 └── README.md # This file  
 
 ## 📝 Design Decisions & Implementation Details

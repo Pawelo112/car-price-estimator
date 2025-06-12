@@ -9,6 +9,7 @@
 - [📝 Design Decisions & Implementation Details](#-design-decisions--implementation-details)  
   - [📊 Data Preparation](#-data-preparation)  
   - [🔧 Feature Engineering & Encoding](#-feature-engineering--encoding)  
+- [📊 Visualization](#-visualization)
 - [📖 License](#license)  
 
 </details>
@@ -26,7 +27,8 @@
 car_price_prediction/  
 │  
 ├── data_preprocessing.py # Clean & encode dataset  
-├── car_price_prediction.csv # Raw Kaggle dataset  
+├── car_price_prediction.csv # Raw Kaggle dataset 
+├── visualization.ipynb # EDA notebook with profiling & plots
 └── README.md # This file  
 
 ## 📝 Design Decisions & Implementation Details
@@ -49,6 +51,15 @@ car_price_prediction/
   - `le_encoders.pkl`  
   - `top_models.pkl`  
   - `feature_names.pkl`  
+
+## 📊 Visualization
+
+Found in visualization.ipynb, includes:
+
+- Automatic profiling with ydata_profiling  
+- Histograms: Price, year, engine volume, etc.  
+- Correlation heatmaps  
+- Frequency plots by category, model, color
 
 ## 📖License
 Copyright © 2025 [Paweł Marcinkowski](https://github.com/Pawelo112), [Wiktor Błaszkiewicz](https://github.com/qub1itz).  

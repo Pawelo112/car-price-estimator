@@ -10,7 +10,7 @@
   - [📊 Data Preparation](#-data-preparation)  
   - [🔧 Feature Engineering & Encoding](#-feature-engineering--encoding)  
 - [📊 Visualization](#-visualization)
-- [📈 Model Training](#-model-training)  
+- [📈 Model Training](#-model-training)         
 - [📖 License](#license)  
 
 </details>
@@ -30,7 +30,7 @@ car_price_prediction/
 ├── data_preprocessing.py # Clean & encode dataset  
 ├── car_price_prediction.csv # Raw Kaggle dataset  
 ├── visualization.ipynb # EDA notebook with profiling & plots  
-├── model_training.py # Train regressors & evaluate performance
+├── model_training.py # Train regressors & evaluate performance  
 └── README.md # This file  
 
 ## 📝 Design Decisions & Implementation Details

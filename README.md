@@ -10,6 +10,7 @@
   - [📊 Data Preparation](#-data-preparation)  
   - [🔧 Feature Engineering & Encoding](#-feature-engineering--encoding)  
 - [📊 Visualization](#-visualization)
+- [📈 Model Training](#-model-training)  
 - [📖 License](#license)  
 
 </details>
@@ -29,6 +30,7 @@ car_price_prediction/
 ├── data_preprocessing.py # Clean & encode dataset  
 ├── car_price_prediction.csv # Raw Kaggle dataset  
 ├── visualization.ipynb # EDA notebook with profiling & plots  
+├── model_training.py # Train regressors & evaluate performance
 └── README.md # This file  
 
 ## 📝 Design Decisions & Implementation Details
@@ -60,6 +62,17 @@ Found in visualization.ipynb, includes:
 - Histograms: Price, year, engine volume, etc.  
 - Correlation heatmaps  
 - Frequency plots by category, model, color
+
+## 📈 Model Training
+
+- **Split:** 80/20 train-test  
+- **Models Trained:**  
+  - Decision Tree (`min_samples_leaf=11`, `max_depth=16`)  
+  - Random Forest (`n_estimators=300`)  
+  - XGBoost (`n_estimators=300`, `max_depth=7`, `learning_rate=0.1`, `subsample=0.7`,
+    `colsample_bytree=0.8`)  
+- **Evaluation Metric:** Mean Absolute Error (MAE)  
+- **Best Model Saved:** `xgb_model.pkl`  
 
 ## 📖License
 Copyright © 2025 [Paweł Marcinkowski](https://github.com/Pawelo112), [Wiktor Błaszkiewicz](https://github.com/qub1itz).  

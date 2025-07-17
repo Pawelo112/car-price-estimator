@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Result – Auto Price Predictor</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet">
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    rel="stylesheet">
+  <style>
+    body {
+      background: linear-gradient(135deg, #0d1b2a 0%, #000000 100%);
+    }
+
+    /* Form card and result box: semi-transparent with neon outline */
+    .card, .result-box {
+      background: rgba(10, 12, 18, 0.85);
+      border: 2px solid rgba(0, 255, 255, 0.6);
+      box-shadow: 0 0 20px rgba(0, 255, 255, 0.4), 0 0 40px rgba(255, 0, 255, 0.3);
+    }
+
+    /* Icons and labels: electric blue */
+    .form-label i {
+      color: #00ffff;
+    }
+
+    /* Headlines */
+    h1.card-title, h1.display-5 {
+      color: #ff00ff; /* neon magenta */
+      text-shadow: 0 0 8px rgba(255, 0, 255, 0.8), 0 0 16px rgba(255, 0, 255, 0.6);
+    }
+
+    /* Calculate button: blue → magenta gradient + glow */
+    .btn-calc {
+      background: linear-gradient(90deg, #00ffff 0%, #ff00ff 100%);
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 12px rgba(0, 255, 255, 0.6), 0 4px 20px rgba(255, 0, 255, 0.6);
+    }
+
+    /* New calculation button (result.html) – reverse gradient */
+    .btn-again {
+      background: linear-gradient(90deg, #ff00ff 0%, #00ffff 100%);
+      color: #fff;
+      border: none;
+      box-shadow: 0 4px 12px rgba(255, 0, 255, 0.6), 0 4px 20px rgba(0, 255, 255, 0.6);
+    }
+
+    /* Color input field – blue glow on focus */
+    input[name="color"]:focus {
+      box-shadow: 0 0 8px rgba(0, 255, 255, 0.8), 0 0 16px rgba(0, 255, 255, 0.6);
+      border-color: #00ffff;
+    }
+  </style>
+</head>
+<body class="d-flex justify-content-center align-items-center vh-100">
+  <div class="text-center result-box">
+    <i class="bi bi-cash-stack mb-3"></i>
+    <h1 class="display-5 mb-2 text-indigo-600">Predicted Price</h1>
+    <p class="fs-1 fw-bold text-success mb-4">{{ prediction }} $</p>
+    <a href="{{ url_for('form') }}" class="btn btn-again btn-lg">
+      <i class="bi bi-arrow-clockwise"></i> New Prediction
+    </a>
+  </div>
+</body>
+</html>

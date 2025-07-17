@@ -111,6 +111,9 @@ Found in visualization.ipynb, includes:
 
 ### Example usage
 
+![prediction form](https://github.com/user-attachments/assets/7450d8f5-464d-4d32-935a-1ab3cf50f2cd)  
+
+![results page](https://github.com/user-attachments/assets/efc13764-7ab6-4fa2-90c5-6a84fd4a9f87)
 
 
 ## 🧰 Tools

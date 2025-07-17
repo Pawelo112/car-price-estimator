@@ -10,7 +10,8 @@
   - [📊 Data Preparation](#-data-preparation)  
   - [🔧 Feature Engineering & Encoding](#-feature-engineering--encoding)  
 - [📊 Visualization](#-visualization)
-- [📈 Model Training](#-model-training)         
+- [📈 Model Training](#-model-training)        
+- [🖥️ Flask Web Application](#-flask-web-application)   
 - [📖 License](#license)  
 
 </details>
@@ -73,6 +74,20 @@ Found in visualization.ipynb, includes:
     `colsample_bytree=0.8`)  
 - **Evaluation Metric:** Mean Absolute Error (MAE)  
 - **Best Model Saved:** `xgb_model.pkl`  
+
+## 🖥️ Flask Web Application
+
+### Routes
+
+- / → Input form (index.html)  
+- /predict → Output price prediction (result.html)  
+
+### Features
+
+- Accepts full car attributes
+- Applies saved preprocessing steps (from training)
+- Displays formatted price prediction (e.g., $12,345.67)
+- Option to return to form and predict again
 
 ## 📖License
 Copyright © 2025 [Paweł Marcinkowski](https://github.com/Pawelo112), [Wiktor Błaszkiewicz](https://github.com/qub1itz).  

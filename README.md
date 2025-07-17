@@ -11,7 +11,7 @@
   - [🔧 Feature Engineering & Encoding](#-feature-engineering--encoding)  
 - [📊 Visualization](#-visualization)
 - [📈 Model Training](#-model-training) 
-- [🖥️ Flask Web Application](#-flask-web-application)
+- [🖥️ Flask Web Application](#-flask-web-application)   
 - [📖 License](#license)  
 
 </details>
@@ -32,6 +32,7 @@ car_price_prediction/
 ├── car_price_prediction.csv # Raw Kaggle dataset  
 ├── visualization.ipynb # EDA notebook with profiling & plots  
 ├── model_training.py # Train regressors & evaluate performance  
+├── car_price_estimator.py # Flask server app for predictions
 └── README.md # This file  
 
 ## 📝 Design Decisions & Implementation Details
@@ -75,7 +76,7 @@ Found in visualization.ipynb, includes:
 - **Evaluation Metric:** Mean Absolute Error (MAE)  
 - **Best Model Saved:** `xgb_model.pkl`  
 
-## 🖥️ Flask Web Application
+## 💻 Flask Web Application
 
 ### Routes
 

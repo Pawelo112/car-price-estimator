@@ -147,6 +147,7 @@ pip install -r requirements.txt
 
 ### 4. Add Dataset
 
+Download from [Kaggle](https://www.kaggle.com/datasets/deepcontractor/car-price-prediction-challenge).  
 Place car_price_prediction.csv in the root folder.  
 
 ### 5. Preprocess Data

@@ -4,6 +4,7 @@
 <details>
 <summary><strong>Click to expand</strong></summary>
 
+- [🔍 Overview](#-overview)
 - [📖 Dataset](#-dataset)  
 - [📋 Project Structure](#-project-structure)  
 - [📝 Design Decisions & Implementation Details](#-design-decisions--implementation-details)  
@@ -11,10 +12,24 @@
   - [🔧 Feature Engineering & Encoding](#-feature-engineering--encoding)  
 - [📊 Visualization](#-visualization)
 - [📈 Model Training](#-model-training) 
-- [🖥️ Flask Web Application](#-flask-web-application)   
+- [🖥️ Flask Web Application](#-flask-web-application)
+- [🧰 Tools](#-tools)  
+- [👨‍🏫 How to Run](#-how-to-run)  
+- [📌 Conclusion](#-conclusion)  
 - [📖 License](#license)  
 
 </details>
+
+## 🔍 Overview
+
+This project is a complete pipeline for predicting used car prices based on various vehicle attributes.  
+
+The project includes:
+- Data preparation & cleaning  
+- Feature engineering & encoding  
+- Training multiple regression models and selecting best one 
+- Visual exploratory data analysis (EDA)  
+- A deployed Flask web app for real-time predictions
 
 ## 📖 Dataset
 
@@ -32,8 +47,12 @@ car_price_prediction/
 ├── car_price_prediction.csv # Raw Kaggle dataset  
 ├── visualization.ipynb # EDA notebook with profiling & plots  
 ├── model_training.py # Train regressors & evaluate performance  
-├── car_price_estimator.py # Flask server app for predictions
-└── README.md # This file  
+├── car_price_estimator.py # Flask server app for predictions  
+├── templates/  
+  &ensp; ├── index.html # Input form  
+  &ensp; └── result.html # Display prediction  
+├── requirements.txt # Python dependencies  
+└── README.md # This file    
 
 ## 📝 Design Decisions & Implementation Details
 
@@ -88,7 +107,70 @@ Found in visualization.ipynb, includes:
 - Accepts full car attributes
 - Applies saved preprocessing steps (from training)
 - Displays formatted price prediction (e.g., $12,345.67)
-- Option to return to form and predict again
+- Option to return to form and predict again  
+
+### Example usage
+
+
+
+## 🧰 Tools
+ 
+- **Core Libraries:**  
+  - `pandas`, `numpy`  
+  - `scikit-learn`  
+  - `xgboost`  
+  - `joblib`  
+  - `flask`  
+  - `seaborn`, `matplotlib`, `ydata_profiling` 
+
+## 👨‍🏫 How to Run
+
+### 1. Clone Repository
+
+```bash
+git clone https://github.com/yourusername/car-price-prediction.git
+cd car-price-prediction
+```
+
+### 2. Set Up Environment
+
+```bash
+python3 -m venv venv
+source venv/bin/activate  # Windows: venv\Scripts\activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Add Dataset
+
+Place car_price_prediction.csv in the root folder.  
+
+### 5. Preprocess Data
+
+```bash
+python data_preprocessing.py
+```
+
+### 6. Train Models
+
+```bash
+python model_training.py
+```  
+
+### 7. Run Flask App
+
+```bash
+python app.py
+```
+Visit http://127.0.0.1:5000 in your browser and try making some predictions.  
+
+## 📌 Conclusion
+This project demonstrates an end-to-end machine learning workflow for predicting car prices, from raw data to a functional web app.  
+You are more than welcome to try it out yourself and make any changes you want.
 
 ## 📖License
 Copyright © 2025 [Paweł Marcinkowski](https://github.com/Pawelo112), [Wiktor Błaszkiewicz](https://github.com/qub1itz).  

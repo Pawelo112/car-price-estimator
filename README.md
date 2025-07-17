@@ -10,8 +10,8 @@
   - [📊 Data Preparation](#-data-preparation)  
   - [🔧 Feature Engineering & Encoding](#-feature-engineering--encoding)  
 - [📊 Visualization](#-visualization)
-- [📈 Model Training](#-model-training)        
-- [🖥️ Flask Web Application](#-flask-web-application)   
+- [📈 Model Training](#-model-training) 
+- [🖥️ Flask Web Application](#-flask-web-application)
 - [📖 License](#license)  
 
 </details>
